@@ -1,0 +1,645 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+section {
+    position: relative;
+}
+
+/* Navbar Style Start */
+header nav {
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+header nav ul li a {
+    position: relative;
+    color: white !important;
+}
+
+header nav ul li a::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: white;
+    bottom: 0;
+    transition: all 0.3s;
+}
+
+header nav ul li .active::before,
+header nav ul li a:hover::before {
+    width: 70%;
+}
+
+header nav ul .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+header nav ul .dropdown .dropdown-menu a:hover {
+    color: #0062D3 !important;
+    background-color: transparent;
+}
+
+/* Navbar Style End */
+
+/* Home Style Start */
+
+#home {
+    position: relative;
+    background-image: url('../img/hero-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#home .bg-overlay {
+    position: absolute;
+    min-height: 100vh;
+    background-color: #0000007e;
+    inset: 0;
+}
+
+#home .text {
+    color: white;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home .words::after {
+    animation: typing 16s linear infinite;
+    content: "";
+}
+
+@keyframes typing {
+    0% {
+        content: "";
+    }
+
+    0.78125% {
+        content: "D|";
+    }
+
+    1.5625% {
+        content: "De|";
+    }
+
+    2.34375% {
+        content: "Des|";
+    }
+
+    3.125% {
+        content: "Desi|";
+    }
+
+    3.90625% {
+        content: "Desig|";
+    }
+
+    4.6875% {
+        content: "Design|";
+    }
+
+    5.46875% {
+        content: "Designe|";
+    }
+
+    6.25% {
+        content: "Designer|";
+    }
+
+    21.87% {
+        content: "Designer|";
+    }
+
+    22.265625% {
+        content: "Designe|";
+    }
+
+    22.65625% {
+        content: "Design|";
+    }
+
+    23.046875% {
+        content: "Desig|";
+    }
+
+    23.4375% {
+        content: "Desi|";
+    }
+
+    23.828125% {
+        content: "Des|";
+    }
+
+    24.21875% {
+        content: "De|";
+    }
+
+    24.609375% {
+        content: "D|";
+    }
+
+    25% {
+        content: "|";
+    }
+
+    25.78125% {
+        content: "D|";
+    }
+
+    26.5625% {
+        content: "De|";
+    }
+
+    27.34375% {
+        content: "Dev|";
+    }
+
+    28.125% {
+        content: "Deve|";
+    }
+
+    28.90625% {
+        content: "Devel|";
+    }
+
+    29.6875% {
+        content: "Develo|";
+    }
+
+    30.46875% {
+        content: "Develop|";
+    }
+
+    31.25% {
+        content: "Developer|";
+    }
+
+    46.87% {
+        content: "Developer|";
+    }
+
+    47.222% {
+        content: "Develope|";
+    }
+
+    47.569444% {
+        content: "Develop|";
+    }
+
+    47.916666% {
+        content: "Develo|";
+    }
+
+    48.263888% {
+        content: "Devel|";
+    }
+
+    48.6111% {
+        content: "Deve|";
+    }
+
+    48.95833% {
+        content: "Dev|";
+    }
+
+    49.305556% {
+        content: "De|";
+    }
+
+    49.652777% {
+        content: "D|";
+    }
+
+    50% {
+        content: "|";
+    }
+
+    50.625% {
+        content: "F|";
+    }
+
+    51.25% {
+        content: "Fr|";
+    }
+
+    51.875% {
+        content: "Fre|";
+    }
+
+    52.5% {
+        content: "Free|";
+    }
+
+    53.125% {
+        content: "Freel|";
+    }
+
+    53.75% {
+        content: "Freela|";
+    }
+
+    54.375% {
+        content: "Freelan|";
+    }
+
+    55% {
+        content: "Freelanc|";
+    }
+
+    55.625% {
+        content: "Freelance|";
+    }
+
+    56.25% {
+        content: "Freelancer|";
+    }
+
+    71.875% {
+        content: "Freelancer|";
+    }
+
+    72.1875% {
+        content: "Freelance|";
+    }
+
+    72.5% {
+        content: "Freelanc|";
+    }
+
+    72.8125% {
+        content: "Freelan|";
+    }
+
+    73.1253% {
+        content: "Freela|";
+    }
+
+    73.4375% {
+        content: "Freel|";
+    }
+
+    73.75% {
+        content: "Free|";
+    }
+
+    74.6625% {
+        content: "Fre|";
+    }
+
+    74.375% {
+        content: "Fr|";
+    }
+
+    74.6875% {
+        content: "F|";
+    }
+
+
+    75% {
+        content: "|";
+    }
+
+    75.52083333333333% {
+        content: "P|";
+    }
+
+    76.04166666666666% {
+        content: "Ph|";
+    }
+
+    76.56249999999999% {
+        content: "Ph|";
+    }
+
+    77.08333333333332% {
+        content: "Pho|";
+    }
+
+    77.60416666666665% {
+        content: "Phot|";
+    }
+
+    77.65376984126982% {
+        content: "Photo|";
+    }
+
+    78.17460317460315% {
+        content: "Photog|";
+    }
+
+    78.69543650793648% {
+        content: "Photogr|";
+    }
+
+    79.21626984126981% {
+        content: "Photogra|";
+    }
+
+    79.73710317460314% {
+        content: "Photograp|";
+    }
+
+    80.25793650793647% {
+        content: "Photograph|";
+    }
+
+    80.7787698412698% {
+        content: "Photographe|";
+    }
+
+    81.25% {
+        content: "Photographer|";
+    }
+
+    84% {
+        content: "Photographer|";
+    }
+
+    84.5% {
+        content: "Photograph|";
+    }
+
+    84.9% {
+        content: "Photograp|";
+    }
+
+    85% {
+        content: "Photogra|";
+    }
+
+    86% {
+        content: "Photogr|";
+    }
+
+    87% {
+        content: "Photog|";
+    }
+
+    88% {
+        content: "Photo|";
+    }
+
+    89% {
+        content: "Phot|";
+    }
+
+    90% {
+        content: "Pho|";
+    }
+
+    91% {
+        content: "Ph|";
+    }
+
+    92% {
+        content: "P|";
+    }
+
+    93% {
+        content: "";
+    }
+
+    100% {
+        content: "";
+    }
+}
+
+
+/* Home Style End */
+
+/* About Style Start */
+
+#about .col-md-6 h5 {
+    position: relative;
+}
+
+#about .col-md-6 h5::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #0078FF;
+    bottom: -30%;
+}
+
+/* About Style End */
+
+/* Services Style Start */
+.sec-title {
+    position: relative;
+}
+
+.sec-title::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: #0078FF;
+    bottom: -23%;
+    transform: translate(-50%, 50%);
+}
+
+.icon {
+    transition: all 0.3s ease-in-out;
+    border: 8px solid #0078FF !important;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .card:hover .icon {
+    color: white;
+    background-color: #0078FF;
+    border-color: #CDE1F8 !important;
+}
+
+/* Services Style End */
+
+/* Counter Style Start */
+#counter {
+    background-image: url('../img/counters-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    min-height: 450px;
+}
+
+#counter .row {
+    position: relative;
+    z-index: 1;
+    color: #CDE1F8;
+    min-height: 450px;
+    align-items: center;
+}
+
+#counter .icon {
+    border: 10px solid #CDE1F8 !important;
+}
+
+/* Counter Style End */
+
+/* Work Style Start */
+
+#work .card {
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#work .card .img {
+    overflow: hidden;
+}
+
+#work .card .img img {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#work .card:hover img {
+    scale: 1.2;
+}
+
+#work .card-body .icon {
+    border: none !important;
+    width: 0;
+    height: 0;
+}
+
+#work .card-body .icon i {
+    cursor: pointer;
+}
+
+/* Work Style End */
+
+/* Slider Style Start */
+#slider {
+    background-image: url('../img/overlay-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+#slider .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#slider .carousel-item {
+    height: 100%;
+    padding: 6rem 0;
+}
+
+#slider .img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Slider Style End */
+
+/* Blog Style Start */
+#blog .img {
+    width: 25px;
+    height: 25px;
+}
+
+#blog .card-body {
+    position: relative;
+}
+
+#blog .card-body .badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#blog .card-body .card-heading h6 {
+    color: white;
+    font-size: 0.7rem;
+}
+
+/* Blog Style End */
+
+/* Contact Style Start */
+#contact {
+    background-image: url('../img/overlay-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+}
+
+#contact .container {
+    padding-top: 7rem !important;
+}
+
+#contact .row {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#contact .row .col-6 h2 {
+    position: relative;
+}
+
+#contact .row .col-6 h2::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #0078FF;
+    bottom: -30%;
+
+}
+
+#contact form button:hover {
+    background-color: #3393FF;
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+
+#contact .row .list-icons i {
+    border: 4px solid #0078FF;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#contact .row .list-icons i:hover {
+    background-color: #0078FF;
+    color: white;
+    border-color: #CDE1F8;
+    cursor: pointer;
+}
+
+/* Contact Style End */
+
+/* Footer Style Start */
+footer {
+    background-color: #0062D3;
+}
+
+/* Footer Style End */
